@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> UpSide </title>
+
+    <!--==== CHAMADA PARA OS LINKS CONSUMIDOS NA PAGINA ====-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <!-- barra menu -->
+    <nav id="navigation">
+      <div class="wrapper"> 
+        <!--logo-->
+        <a class="logo" href="#home">
+          <img  id="logo-topo" src="assets/imagens/e-dots_master.png" alt="logo do meu site">
+        </a>
+        <!--icones menu (desktop e mobile)-->
+        <div class="menu">
+          <ul>
+            <li>
+              <a onclick="closeMenu()" href="#home">Início</a>
+            </li>
+            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+
+          </ul>
+          <a class="button"  href="#">
+            Login / cadastro
+          </a>
+          <!-- lista de redes sociais é exposta para versão mobile-->
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href="#">
+                <img src="assets/icones/icone_instagram.svg" alt="icone do instagram">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#" alt="icone_facebook">
+                <img src="assets/icones/icone_facebook.svg" alt="icone do facebook">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <img src="assets/icones/icone_youtube.svg" alt="icone_youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--icone de menu hamburguer (mobile)-->
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu" >
+          <img src="assets/icones/icone_menu.svg" alt="abre menu">
+        </button>
+
+        <!--botão close menu (mobile)-->
+        <button               
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu" >
+          <img src="assets/icones/icone_closed_menu.svg" alt="">
+        </button>
+
+      </div><!-- div wrapper da navigation (menu) -->
+    </nav><!-- barra menu -->
+
+    <!-- home -->
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Bem Vindos á e-Dots</h4>
+            <h1>Texto de efeito em destaque para grandes gerações e economia.</h1>
+          </header>
+
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo reiciendis non unde uscipit repudiandae dolorum amet. Fuga nostrum autem error vitae!
+            </p>
+            <!-- botao whatsapp na home -->
+            <a class="button" href="#">    
+              faça seu orçamento conosco
+            </a>
+
+          </div><!-- content -->
+        </div><!-- col-a -->
+
+        <div class="imgPrincipalHome">
+          <img
+            src="./assets/imagens/mulher-negra-com-moleton-verde-com-as-duas-maos-no-peito.png"
+            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
+          />
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>+3.500</h3>
+            <p>Clientes atendidos</p>
+          </div>
+          <div class="stat">
+            <h3>+15</h3>
+            <p>Especialistas disponíveis</p>
+          </div>
+          <div class="stat">
+            <h3>+10</h3>
+            <p>Anos no mercado</p>
+          </div>
+        </div><!-- stats -->
+      </div><!-- div wrapper da home -->
+    </section><!-- home -->
+
+    <!-- services -->
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>Serviços</h4>
+          <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+        </header>
+
+        <!-- content dos cards de services-->
+        <div class="content">
+          <!-- cards dos services-->
+          <div class="cards">
+            <div class="card">
+              <div class="imgh3cards">
+                <img src="assets/icones/icone_checked.svg" alt="">
+                <h3>Amet minim mollit</h3>
+              </div><!-- div: imagem e h3 do cards-->
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+            <div class="card">
+              <div class="imgh3cards">
+                <img src="assets/icones/icone_checked.svg" alt="">
+                <h3>Amet minim mollit</h3>
+              </div><!-- div: imagem e h3 do cards-->
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+            <div class="card">
+              <div class="imgh3cards">
+                <img src="assets/icones/icone_checked.svg" alt="">
+                <h3>Amet minim mollit</h3>
+              </div><!-- div: imagem e h3 do cards-->
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+            <div class="card">
+              <div class="imgh3cards">
+                <img src="assets/icones/icone_checked.svg" alt="">
+                <h3>Amet minim mollit</h3>
+              </div><!-- div: imagem e h3 do cards-->
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+            <div class="card">
+              <div class="imgh3cards">
+                <img src="assets/icones/icone_checked.svg" alt="">
+                <h3>Amet minim mollit</h3>
+              </div><!-- div: imagem e h3 do cards-->
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+            <div class="card">
+              <div class="imgh3cards">
+                <img src="assets/icones/icone_checked.svg" alt="">
+                <h3>Amet minim mollit</h3>
+              </div><!-- div: imagem e h3 do cards-->
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+          </div><!-- cards dos services-->
+        </div><!-- content dos cards de services-->
+      </div><!-- div wrapper dos services-->
+    </section><!-- services -->
+
+    <!-- about -->
+    <section id="about">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Sobre nós</h4>
+            <h2>Entenda quem somos e por que existimos</h2>
+          </header>
+
+          <div class="content">
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim. Amet minim mollit
+              non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim. Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim. Amet minim mollit non deserunt ullamco est sit aliqua
+              dolor do amet sint. Velit officia consequat duis enim. Amet minim
+              mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            src="./assets/imagens/doutor-feliz-segurando-prancheta-com-pacientes.png"
+            alt="Doutor feliz segurando prancheta com pacientes"
+          />
+        </div>
+
+      </div><!-- div wrapper sobre-->
+    </section><!-- about -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Entre em contato com a gente!</h2>
+          </header>
+
+          <div class="content">
+            <a
+              class="button"
+              href="#"
+              target="_blank"
+              > 
+              Faça seu orçameto
+            </a>
+            <ul>
+              <li>
+                <a class="email" href="#" target="_blank" rel="external" href="#">
+                  <img src="assets/icones/icone_email.svg" alt="envie-nos um email">
+                  <p id="txtEmail">  @edotsenergia.com </p>
+                </a>
+              </li>
+              <li>
+                <a class="localizacao" target="_blank" rel="external" href="https://goo.gl/maps/yomWQH5CQ4iudswA9" >
+                  <img src="assets/icones/icone_localizacao.svg" alt="acesso a nossa localização">
+                  <p id="txtLocalizacao"> R. 86, 37 - St. Sul, Goiânia - GO, 74083-385 </p>
+                </a>
+              </li>
+              <li>
+                <!-- mapa gerado pelo google para ser inserido em sites--> 
+                <div class="mapa">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.7465858098344!2d-49.2549733851333!3d-16.68955988850034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x174c817ba4b98293!2zMTbCsDQxJzIyLjQiUyA0OcKwMTUnMTAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1652362435998!5m2!1spt-BR!2sbr" width="400 rem" height="150 rem" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div> <!-- mapa -->
+              </li>
+            </ul>
+          </div><!--content-->
+        </div><!--col-a-->
+      
+        <div class="col-b">
+          <img 
+            src="./assets/imagens/homem-negro-com-moletom-bege-mexendo-no-celular.png"
+            alt="Homem negro com moletom bege mexendo no celular e sorrindo"
+          />
+        </div><!-- imagem na contact-->
+      </div><!-- div wrapper contact-->
+    </section><!-- contact -->
+
+    <!-- rodapé-->
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home">
+            <img src="assets/imagens/e-dots_master.png" alt="logo da marca">
+          </a>
+          <p>
+            © 2022 e-dots. Todos os direitos reservados.
+          </p>
+        </div>   
+
+        <div class="col-b">
+          <ul class="social-links">
+              <li>
+                <a target="_blank" href="#">
+                  <img src="assets/icones/icone_instagram.svg" alt="icone do instagram">
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="#" alt="icone_facebook">
+                  <img src="assets/icones/icone_facebook.svg" alt="icone do facebook">
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="#">
+                  <img src="assets/icones/icone_youtube.svg" alt="icone_youtube">
+                </a>
+              </li>
+          </ul>
+        </div> <!-- div col-b-->
+      </div><!-- div wrapper contact footer -->
+    </footer><!-- rodapé-->
+
+    <!-- botao para topo da pagina-->
+    <a id="backToTopButton" href="#home">
+      <img src="assets/icones/icone_backToTopButton.svg" alt="">
+    </a>
+
+    <!-- ==== CHAMADAS DE SCRIPTS ==== -->
+    <!--  script da ScrollReaveal Lib, para rolagem suáve na página -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+     <!-- Script da pagina -->
+    <script src="./main.js"></script>
+
+  </body>
+</html>

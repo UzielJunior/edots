@@ -1,0 +1,62 @@
+@import "../style.css";
+
+/*======================= GERAL =====================*/
+/* home  + navigation + services + about + contact*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root
+{
+  font-size: 62.5%;      /* 1rem = 10px */
+
+/*=== ÁREA  DE DECLARAÇÃO PARA VARIÁVEIS GLOBAIS ===*/
+
+  /* ======= Paleta de cores ======*/
+    /* === cores primarias ===*/
+    --blue-hover : #0A4378;
+    --blue-normal: #1971C2;
+    --blue-light : #D0EBFF;
+    /* === cores secundarias ===*/
+    --orange-hover : #F23207;
+    --orange-normal: #F28907;
+    --orange-light : #F2A007;
+    /* === cores tercearias ===*/
+    --gray-hover : #212529;
+    --gray-normal: #495057;
+    --gray-light : #eaeaea;
+}
+
+ /*=== FOOTER ========*/
+ footer 
+ {
+  display: flex;
+  background-color: var(--blue-normal);
+  padding-block: 6rem;
+  text-align: left;
+  color: white;
+  align-items: center;
+ }
+
+ footer .logo 
+ {
+   margin-bottom: 2.4rem;
+ }
+
+ footer p /* var */
+ {
+  color: var(--gray-light);
+  line-height: 2;
+  margin-bottom: 3.2rem;
+ }
+
+ footer .social-links 
+ {
+ justify-content: flex-end;
+ }
+
+ footer .wrapper
+ {
+ justify-content: flex-start;
+ }

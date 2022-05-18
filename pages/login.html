@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpSide-home</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style-login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        
+        <a class="logo" href="#home">
+          <img src="../assets/logo.svg" alt="logo do meu site">
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a onclick="closeMenu()" href="#home">Início</a>
+            </li>
+            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+          </ul>
+
+      </div>
+    </nav>
+
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Entre em contato com a gente!</h2>
+          </header>
+
+          <div class="content">
+            <a
+            class="button"
+            href="#"
+            target="_blank">
+            <img src="assets/icone_whatsapp.svg" alt="">
+            Agende sua consulta
+          </a>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="external" style="text-decoration: none;" >
+                <img src="../assets/icone_email.svg" alt="envie-nos um email">
+                @upsidesolucoes.com
+              </a>
+             </li>
+            <li>
+              <a target="_blank" href="https://www.google.com/maps/place/16%C2%B041'22.4%22S+49%C2%B015'10.0%22W/@-16.6895599,-49.2549734,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x174c817ba4b98293!8m2!3d-16.6895599!4d-49.2527847?hl=pt-BR" style="text-decoration: none;">
+                <img src="../assets/icone_localizacao.svg" alt="acesso a nossa localização">
+                R. 86, 8 - St. Sul, Goiânia - GO, 74083-385
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div><!--col-a-->
+      
+        
+          <form class="formulario" action="" >
+
+            <div class="tituloFicha" id="tituloFicha">
+              <a href="#" target="_blank" rel="external" style="text-decoration: none;" >
+                <img src="../assets/icone_email.svg" alt="envie-nos um email">
+              </a>
+              <h3 >Preencha o formulário</h3>
+            </div><!--tituloFicha-->
+                    
+            <div class="campo">
+              <div class="dados-pessoais">
+                <ul>
+                  <li>
+                    <label class="nome" for="nome">
+                    <strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" class="input-dados-pessoais" required>
+                  </li>
+                  <li>
+                    <label class="sobreNome" for="sobreNome">
+                    <strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobreNome" id="sobreNome" class="input-dados-pessoais" required>
+                  </li>
+                  <li>
+                    <label class="email" for="email">
+                    <strong>Email : </strong></label>
+                    <input type="email" name="email" id="email" class="input-dados-pessoais" required>
+                  </li>
+                  <li>
+                    <label class="celular" for="email"><strong>Celular : </strong></label>
+                    <input type="number" name="celular" id="celular" class="input-dados-pessoais" placeholder="(62)0 0000-0000" required>
+                  </li>
+                </ul>
+              </div><!-- dados-pessoais -->
+
+    </div><!-- campo -->
+
+          <div class="campo">
+
+            <div>
+              <label><strong>De qual lado da aplicação voce desenvolve?</strong></label>
+            </div>
+
+              <div class="stack">
+
+                <label for="">
+                <input class="front-end" type="radio" name="devWeb" value="front-end">front-end
+                </label>
+
+               <label for="">
+                <input class="back-end" type="radio" name="devWeb" value="back-end">back-end
+                </label>
+
+                <label for="">        
+                <input class="full-stack" type="radio" name="devWeb" value="full-stack" checked>full-stack
+                </label>
+              </div>
+          </div>
+          
+          <div class="campo">
+            
+            <label for="senioridade"><strong>Senioridade</strong></label>
+
+            <select name="senioridade" id="senioridade" class="senioridade">
+              <option selected disabled value="">selecione...</option>
+              <option class="senioridade">Estagiario</option>
+              <option class="senioridade">Junior</option>
+              <option class="senioridade">Pleno</option>
+              <option class="senioridade">Senior</option>
+            </select>
+          </div>
+
+          <div class="grupoTecnologias">
+           
+              <div class="txtTecnologias"> 
+                <label><strong>Selecione as tecnologias que utiliza: </strong></label>
+              </div>
+
+              <div class="tecnologias">  
+
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" class="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML</label>
+  
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" class="tecnologia2" value="HTML">
+                <label for="tecnologia2"> JavaScript</label>
+  
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" class="tecnologia3" value="HTML">
+                <label for="tecnologia3"> Css</label>
+  
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" class="tecnologia4" value="HTML">
+                <label for="tecnologia4"> Java</label>
+  
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" class="tecnologia5" value="HTML">
+                <label for="tecnologia5"> C++</label>
+                
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" class="tecnologia6" value="HTML">
+                <label for="tecnologia6"> Python</label>
+                
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" class="tecnologia7" value="HTML">
+                <label for="tecnologia7"> PHP</label>
+              </div>
+
+          </div><!-- grupo tecnologias -->
+
+          <div class="experiencia">           
+            <div>              
+              <label for=""><strong>Conte um pouco sobre a sua experiencia </strong></label>
+            </div>
+            <textarea class="txtarea" name="" id="" cols="0" rows="10" style="width: 26em;"></textarea>
+            <input type="file" name="arquivos" >
+          </div><!-- experiencia-->
+
+          <br>
+          <button class="btnConcluido" type="submit">Concluido</button>        
+  
+        </form>
+      </div><!--wrapper -->
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home">
+            <img src="../assets/logo_light.svg" alt="logo da marca">
+          </a>
+
+          <p>
+            ©2022 UpSide. <br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div>
+         <!--
+
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.7465858098344!2d-49.2549733851333!3d-16.68955988850034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x174c817ba4b98293!2zMTbCsDQxJzIyLjQiUyA0OcKwMTUnMTAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1652362435998!5m2!1spt-BR!2sbr" width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         -->
+
+        </div>
+ 
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href="#">
+                <img src="../assets/icone_linkedin.svg" alt="icone do linkedin">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <img src="../assets/icone_instagram.svg" alt="icone do instagram">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <img src="../assets/icone_facebook.svg" alt="icone do facebook">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <img src="../assets/icone_instagram.svg" alt="icone do instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTopButton" href="#home">
+      <img src="../assets/icone_backToTopButton.svg" alt="">
+    </a>
+
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

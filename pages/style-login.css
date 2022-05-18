@@ -1,0 +1,142 @@
+
+
+:root
+{
+  /*====== Primari colors ======*/
+  --blue-hover:  #0A4378;
+  --blue-normal: #1971C2;
+  --blue-light: #D0EBFF;
+
+  /*===== secundari colors =====*/
+  --gray-paragraph: #495057;
+  --gray-headline: #212529;
+  --white: white;
+}
+
+.formulario
+{
+  padding: 2 2rem;
+  display: flex;
+  justify-content: center;
+  border: 2.0px solid var(--blue-hover);
+  border-radius: 10px;
+  color: black;
+  background: #ffffff;
+  width: 80%;
+  height: 1200;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.2s linear;
+  align-items: center;
+  text-align: center;
+  display: block;
+}
+/*=== Estilização de cada section ===*/
+
+
+
+/* === TÍTULO DA FICHA ===*/
+.tituloFicha{
+  margin-top: 20;
+  display: flex;
+  justify-content: center;
+}
+.tituloFicha{
+  margin-top: 2rem;
+}
+
+.tituloFicha h3{
+  margin-left: 1rem;
+  font: bold 2rem/1.1 'Montserrat', sans-serif;
+  color: var(--blue-normal);
+}
+/*=== DADOS PESSOAIS ===*/
+.dados-pessoais{
+  display: flex;
+  margin-top: 2rem;
+  align-content: center;
+  justify-content: center;
+}
+.input-dados-pessoais
+{
+  margin-left: 1rem;
+}
+
+.stack
+{
+  margin-top: 10px;
+}
+.full-stack
+{
+  margin-left: 15px;
+}
+.back-end
+{
+  margin-left: 15px;
+}
+.senioridade
+{ 
+  border-radius: 0px;
+  padding-right: 1em;
+  background: #f8f8f8;
+}
+.btnConcluido
+{
+  background: var(--primary-color);
+
+  border: none;
+  border-radius: 2rem;
+
+  margin-bottom: 6rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  text-decoration: none;
+
+  transition: background 200ms;
+}
+.btnConcluido:hover 
+{
+  background: var(--blue-hover);
+}
+.grupoTecnologias div
+{
+  margin-top: 20px;
+  text-align: left;
+  padding: 0px;
+}
+.txtTecnologias
+{
+  margin-left: 15px;
+}
+.tecnologias
+{
+  margin-left: 15px;
+}
+.experiencia 
+{
+  margin-top: 0px;
+  align-items: center;
+}
+.txtarea
+{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
