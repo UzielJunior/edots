@@ -280,6 +280,7 @@ nav .close-menu
 #home .button 
 {
   margin-inline: auto;
+
 }
 #home p  /* var */
 {
@@ -291,13 +292,17 @@ nav .close-menu
 }
 #home img 
 {
+  margin-top: 1rem;
   width: 26.4rem;
-  display: block;
+  display: flex;
   margin-inline: auto; 
   object-position: 0 2rem;
+  z-index: -1;
+  border-radius: 0.4rem;
 }
 #home .stats  /* var */
 {
+
   width: 100%;
   padding-block: 2rem;
   margin-inline: auto;
