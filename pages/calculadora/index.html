@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body onload="simulador()" oninput="simulador()">
+
+      <input type="range" name="simulador-range" id="simulador-range" class="slider" value="500" min="500" max="200000" step="100">
+
+      <br>
+         <div id="fatura-mensal-do-usuario">
+         </div>
+      <br>
+
+      <br>
+         <div id="fatura-mensal-do-usuario"></div>
+      <br>
+      <br>
+         <div id="economia-mensal-do-usuario"></div>
+      <br>
+      <br>
+         <div id="economia-anual-do-usuario"></div>
+      <br>
+      <br>
+         <div id="co2-evitado"></div>
+      <br>
+      <br>
+         <div id="arvores-salva"></div>
+      <br>
+
+      <div class="simulador-container">
+
+         <br>
+         <div class="col-custom">
+            <span class="title">Valor da Fatura mensal (R$)</span>
+            <br>
+            <span class="info valor-fatura-mensal">R$ </span>
+         </div>
+
+         <br>
+         <div class="col-custom">
+            <span class="title">Economia mensal Estimada (R$)</span>
+            <br>
+            <span class="info economia-mensal-estimada">R$1.377,60</span>
+         </div>
+
+         <br>
+         <div class="col-custom">
+            <span class="title">Economia anual Estimada (R$)</span>
+            <br>
+            <span class="info economia-anual-estimada">R$ 16.531,20</span>
+         </div>
+
+         <br>
+         <div class="col-custom">
+            <span class="title">Toneladas de emissão Evitadas (t co2/mês)</span>
+            <br>
+            <span class="info toneladas-emissao-evitadas">0.648 tCO2</span>
+         </div>
+
+         
+
+         <br>
+         <div class="col-custom">
+            <span class="title">Árvores salvas  (unidades/mês)</span>
+            <br>
+            <span class="info arvores-salvas">674</span>
+         </div>
+      </div> <!-- simulador-container -->
+          
+   <script src="script.js"></script>   
+</body>
+</html>

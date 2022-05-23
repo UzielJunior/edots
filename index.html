@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> e-Dots </title>
+    <title> UpSide </title>
 
     <!--==== CHAMADA PARA OS LINKS CONSUMIDOS NA PAGINA ====-->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet" />
   </head>
 
   <body>
@@ -22,17 +21,16 @@
       <div class="wrapper"> 
         <!--logo-->
         <a class="logo" href="#home">
-          <img  id="logo-topo" src="assets/imagens/e-dots_master.png" alt="logo do meu site">
+          <img  id="logo-topo" src="assets/imagens/UpSide_bco.png" alt="logo do meu site">
         </a>
         <!--icones menu (desktop e mobile)-->
         <div class="menu">
           <ul>
-            <li>
-              <a onclick="closeMenu()" href="#home">Início</a>
-            </li>
+            <li><a onclick="closeMenu()" href="#home">Início</a></li>
             <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
             <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
             <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+            <li><a onclick="closeMenu()" href="#">Simular</a></li>
 
           </ul>
           <a class="button"  href="#">
@@ -58,11 +56,11 @@
           </ul>
         </div>
         <!--icone de menu hamburguer (mobile)-->
-        <button
+        <button 
           aria-expanded="false"
           aria-label="Abrir menu"
           onclick="openMenu()"
-          class="open-menu" >
+          class="open-menu" id="open-menu">
           <img src="assets/icones/icone_menu.svg" alt="abre menu">
         </button>
 
@@ -84,12 +82,16 @@
         <div class="col-a">
           <br>
           <header>
-            <h1>Texto de efeito em destaque.</h1>
+            <h1 id="texto-principal">
+              Energia evitada, é sempre
+              mais barata que
+              energia produzida
+            </h1>
           </header>
-
           <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo reiciendis non unde uscipit repudiandae dolorum amet. Fuga nostrum autem error vitae!
+            <p id="paragrafo-inicial">
+              Inovação que transforma. Energia que movimenta e nos leva ao futuro.
+              Movidos por uma fonte inesgotável, não poluente e disponível a todos: O Sol.
             </p>
             <!-- botao whatsapp na home -->
             <a class="button" href="#">    
@@ -98,28 +100,6 @@
             <br>
           </div><!-- content -->
         </div><!-- col-a -->
-
-        <div class="imgPrincipalHome">
-          <img
-            src="assets/imagens/imgP.jpg"
-            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
-          />
-        </div>
-
-        <div class="stats">
-          <div class="stat">
-            <h3>+3.500</h3>
-            <p>Clientes atendidos</p>
-          </div>
-          <div class="stat">
-            <h3>+15</h3>
-            <p>Especialistas disponíveis</p>
-          </div>
-          <div class="stat">
-            <h3>+10</h3>
-            <p>Anos no mercado</p>
-          </div>
-        </div><!-- stats -->
       </div><!-- div wrapper da home -->
     </section><!-- home -->
 
@@ -128,71 +108,70 @@
       <div class="wrapper">
         <header>
           <h4>Serviços</h4>
-          <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+          <h2>Como nós podemos te ajudar?</h2>
         </header>
-
         <!-- content dos cards de services-->
         <div class="content">
           <!-- cards dos services-->
           <div class="cards">
+            <!-- card 1-->
             <div class="card">
               <div class="imgh3cards">
                 <img src="assets/icones/icone_checked.svg" alt="">
-                <h3>Amet minim mollit</h3>
+                <h3>acionamento remoto</h3>
               </div><!-- div: imagem e h3 do cards-->
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim.
+                Nossa meta é viabilizar o máximo de intervenções remotas possíveis com seccionamento remoto de stringbox, acionamento de disjuntores. 
               </p>
             </div>
+            <!-- card 2-->
             <div class="card">
               <div class="imgh3cards">
                 <img src="assets/icones/icone_checked.svg" alt="">
-                <h3>Amet minim mollit</h3>
+                <h3>Aferições remotas</h3>
               </div><!-- div: imagem e h3 do cards-->
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim.
+                Medição da temperatura do local de instalação dos inversores e dos quadros, medição do consumo interno da usina e configuração remota do wi-fi para garantir o monitoramento constante da operação.
               </p>
             </div>
+            <!-- card 3-->
             <div class="card">
               <div class="imgh3cards">
                 <img src="assets/icones/icone_checked.svg" alt="">
-                <h3>Amet minim mollit</h3>
+                <h3>software de monitoramento</h3>
               </div><!-- div: imagem e h3 do cards-->
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim.
+                limpeza remota de painéis, com software de monitoramento, para estabelecer padrões e tendencias que promovam intervenções sem se quer a necessidade de intervenção remota mesmo que de um simples comando.
               </p>
             </div>
+            <!-- card 4-->
             <div class="card">
               <div class="imgh3cards">
                 <img src="assets/icones/icone_checked.svg" alt="">
-                <h3>Amet minim mollit</h3>
+                <h3>Gestão de consumo</h3>
               </div><!-- div: imagem e h3 do cards-->
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim.
+                Gestão do consumo, para evitar-se a compensação de créditos, cobrados na taxa de disponibilidade, ou que seja armazenado um credito muito elevando na unidade consumidora, que leve a perdas no projeto, ou ate mesmo descasamento do beneficio imediato esperado.
               </p>
             </div>
+            <!-- card 5-->
             <div class="card">
               <div class="imgh3cards">
                 <img src="assets/icones/icone_checked.svg" alt="">
-                <h3>Amet minim mollit</h3>
+                <h3>Dispositivos inteligentes</h3>
               </div><!-- div: imagem e h3 do cards-->
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim.
+                Dispositivos adequados ao conceito Do It Yourself, para otimização dos processos, e eficiência em custo que garante escalabilidade da solução. Movimento colaborativo, impulsionado pela democratização e independência energética.
               </p>
             </div>
+            <!-- card 6-->
             <div class="card">
               <div class="imgh3cards">
                 <img src="assets/icones/icone_checked.svg" alt="">
-                <h3>Amet minim mollit</h3>
+                <h3>Aplicações intuitivas</h3>
               </div><!-- div: imagem e h3 do cards-->
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim.
+                Aplicações intuitivas, plug and play facilmente integrada no dia a dia das pessoas, com a conveniência de economizar sem interferir na qualidade e nos padrões que consumimos energia.
               </p>
             </div>
           </div><!-- cards dos services-->
@@ -208,24 +187,19 @@
             <h4>Sobre nós</h4>
             <h2>Entenda quem somos e por que existimos</h2>
           </header>
-
           <div class="content">
             <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim. Amet minim mollit
-              non deseruofficia consequat duis enim. Amet minim
-              mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Automação, inovação, visão sistêmica e processamento de dados, para nós é um estilo de vida, que faz parte da estrutura do nosso DNA. Enxergamos oportunidades, em problemas negligenciados e não resolvidos. 
+              Manter o foco, se preparando e atento a novas oportunidades.
             </p>
           </div>
         </div>
-
         <div class="col-b">
           <img
-            src="./assets/imagens/e-dots.jpeg"
-            alt="Doutor feliz segurando prancheta com pacientes"
+            src="./assets/imagens/UpSide_master.png"
+            alt=""
           />
         </div>
-
       </div><!-- div wrapper sobre-->
     </section><!-- about -->
 
@@ -236,13 +210,10 @@
           <header>
             <h2>Entre em contato com a gente!</h2>
           </header>
-
           <div class="content">
-            <a
-              class="button"
+            <a class="button"
               href="#"
-              target="_blank"
-              > 
+              target="_blank" > 
               Venha fazer seu orçameto
             </a>
             <ul>
@@ -267,11 +238,11 @@
             </ul>
           </div><!--content-->
         </div><!--col-a-->
-      
+
         <div class="col-b">
           <img 
-            src="./assets/imagens/homem-negro-com-moletom-bege-mexendo-no-celular.png"
-            alt="Homem negro com moletom bege mexendo no celular e sorrindo"
+            src="./assets/imagens/aperto-de-maos.jpeg"
+            alt="pessoas apertando as mãos"
           />
         </div><!-- imagem na contact-->
       </div><!-- div wrapper contact-->
@@ -282,13 +253,12 @@
       <div class="wrapper">
         <div class="col-a">
           <a class="logo" href="#home">
-            <img src="assets/imagens/e-dots_master.png" alt="logo da marca">
+            <img src="assets/imagens/UpSide_master.png" alt="logo da marca">
           </a>
           <p>
-            © 2022 e-dots. Todos os direitos reservados.
+            © 2022 UpSide. Todos os direitos reservados.
           </p>
         </div>   
-
         <div class="col-b">
           <ul class="social-links">
               <li>
@@ -313,7 +283,7 @@
 
     <!-- botao para topo da pagina-->
     <a id="backToTopButton" href="#home">
-      <img src="assets/icones/icone_backToTopButton.svg" alt="">
+      <img src="assets/icones/icone_backToTopButton.svg" alt="botão para o topo da pagina">
     </a>
 
     <!-- ==== CHAMADAS DE SCRIPTS ==== -->
